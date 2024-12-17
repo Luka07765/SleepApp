@@ -2,6 +2,7 @@
   "expo": {
     "name": "Salama",
     "slug": "Salama",
+    "scheme": "aurora",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,10 +19,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.jsm.salama"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "2576e1af-12c2-4f37-bbde-8c6a62df84e8"
+      }
     }
   }
 }
